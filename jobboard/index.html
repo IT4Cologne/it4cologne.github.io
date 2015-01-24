@@ -50,7 +50,7 @@
 			$('<div/>').addClass("panel-body").html("<strong>Beschreibung</strong><br>"+offer).appendTo(item);
 			$('<div/>').addClass("panel-footer").text("Link: "+url).appendTo(item);
 	
-			item.appendTo($('#jobBoardDivAlt'));
+			item.prependTo($('#jobBoardDivAlt'));
 
 			$('#jobBoardDiv')[0].scrollTop = $('#jobBoardDiv')[0].scrollHeight;
 		};
