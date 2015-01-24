@@ -23,9 +23,7 @@
 		<input type='button' id='sendJob' value="Submit">
 		<br>
 		<br>
-		<div class="row row-0">
-			<div id='jobBoardDivAlt'></div>
-		</div>
+		<div id='jobBoardDivAlt' class="row"></div>
 	</div>	
 	<script>
 		var refJobs = new Firebase("https://jobboard-v01.firebaseio.com/jobs");
@@ -54,7 +52,7 @@
 	
 			item.prependTo($('#jobBoardDivAlt'));
 
-			$('#jobBoardDiv')[0].scrollTop = $('#jobBoardDiv')[0].scrollHeight;
+			$('#jobBoardDivAlt')[0].scrollTop = $('#jobBoardDivAlt')[0].scrollHeight;
 		};
 	</script>
 </body>
